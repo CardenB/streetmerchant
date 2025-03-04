@@ -10,6 +10,8 @@
     "compile": "tsc",
     "pretest": "npm run compile",
     "posttest": "npm run lint",
+    "postinstall": "npm run tsc",
+    "tsc": "tsc",
     "prestart": "npm run compile",
     "start": "node build/src/index.js",
     "start:dev": "nodemon --config nodemon.json",
